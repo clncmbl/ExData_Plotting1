@@ -1,8 +1,7 @@
 library(lubridate)
 library(dplyr)
 
-datafile <- "../data/hpc_20070201_20070202.txt"
-#datafile <- "../data/household_power_consumption.txt"
+datafile <- "../data/household_power_consumption.txt"
 data <- read.csv(datafile, sep=";", na.strings="?")
 
 # Select rows for the two days of interest.
